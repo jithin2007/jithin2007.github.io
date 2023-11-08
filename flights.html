@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>All Flights And Packages</title>
+	<link rel="stylesheet" type="text/css" href="styling.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	
+	<div class="container">
+<div class="navbar">
+	<div class="logo">
+		<a href="index.html"><img src="logo4.png" width="125px"></a>
+	</div>
+	<nav>
+		<ul id="MenuItems">
+			<li><a href="index.html">Home</a></li>
+			<li>
+				<a href="login.php">Login</a>
+			</li>
+			<li>
+				<a href="logout.php">Logout</a>
+			</li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="flights.html">Book A Ticket</a></li>
+			<li><a href="contact.php">Contact Us</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+			<li><a href="learn.html">Learn</a></li>
+			<li><a href="creators.html">Creators</a></li>
+			<li><a href="feedback.html">Feedback</a></li>
+			<li><p><b>Page By Jithin Mathew</b></p></li>
+		</ul>
+	</nav>
+	<img src="menu.png" class="menu-icon" onclick="menutoggle()">
+</div>
+</div>
+<div class="small-container">
+	<div class="row row-2" >
+		<h2>All Flights And Packages</h2>
+		<select>
+			<option>
+				Default Sorting
+			</option>
+			<option>
+				Sort by Price
+			</option>
+			<option>
+				Sort by Popularity
+			</option>
+			<option>
+				Sort by Rating
+			</option>
+			<option>
+				Sort by Sale
+			</option>
+		</select>
+	</div>
+<div class="row">
+	<div class="col-4">
+		<a href="flightdetails.html"><img src="flight1.jpg"></a>
+		<h4>Indigo Airlines</h4>
+		<div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+		</div>
+		<p>Rs. 10,350</p>
+	</div>
+	<div class="col-4">
+		<img src="flight2.jpg">
+		<h4>Jithin Mathew Airlines</h4>
+		<div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+		</div>
+		<p>Rs. 4,500</p>
+	</div>
+	<div class="col-4">
+		<img src="flight3.jpg">
+		<h4>Air Europe</h4>
+		<div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+		</div>
+		<p>Rs. 15,850</p>
+	</div>
+	<div class="col-4">
+		<img src="flight4.jpg">
+		<h4>Paris Airlines</h4>
+		<div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+		</div>
+		<p>Rs. 12,000</p>
+	</div>
+	</div>
+	<div class="row">
+	<div class="col-4">
+		<img src="paris10.jpg">
+		<h4>Tremendous Paris</h4>
+		<div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+          <i class="fa fa-star-o"></i>
+		</div>
+		<p>Rs. 50,968</p>
+	</div>
+	<div class="col-4">
+		<img src="paris11.jpg">
+		<h4>Mesmorising Eiffel</h4>
+		<div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+		</div>
+		<p>Rs. 38,500</p>
+	</div>
+	<div class="col-4">
+		<img src="paris12.jpg">
+		<h4>Jithin Mathew Pack</h4>
+		<div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+		</div>
+		<p>Free</p>
+	</div>
+	<div class="col-4">
+		<img src="paris13.jpg">
+		<h4>Couple Package</h4>
+		<div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+		</div>
+		<p>Rs. 68,489</p>
+	</div>
+	<div class="col-4">
+		<img src="paris15.jpg">
+		<h4>Family Of 4</h4>
+		<div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+		</div>
+		<p>Rs. 1,48,986</p>
+	</div>
+	<div class="col-4">
+		<img src="paris16.jpg">
+		<h4>London Bridge</h4>
+		<div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+		</div>
+		<p>Rs. 28,000</p>
+	</div>
+	<div class="col-4">
+		<img src="paris17.jpeg">
+		<h4>Eiffel Waffle</h4>
+		<div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+		</div>
+		<p>Rs. 88,067</p>
+	</div>
+	<div class="col-4">
+		<img src="paris18.jfif">
+		<h4>Jithin Special</h4>
+		<div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+		</div>
+		<p>Free</p>
+	</div>
+	</div>
+	<div class="page-btn">
+		<span>1</span>
+		<span>2</span>
+		<span>3</span>
+		<span>4</span>
+		<span>&#8594;</span>
+	</div>
+</div>
+
+	
+
+<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+				<h3>Download Our Mobile App</h3>
+				<p>Available for android as well as ios</p>
+				<div class="app-logo">
+					<img src="play-store.png">
+					<img src="app-store.png">
+				</div>
+			</div>
+			<div class="footer-col-2">
+				<img src="logo4.png">
+				<p>Eiffel Tower The Pride Of Paris, The Bride Of Happiness:)</p>
+			</div>
+			<div class="footer-col-3">
+				<h3>Useful Links</h3>
+				<ul>
+					<li><a href="">Coupons</a></li>
+					<li><a href="">Blog Post</a></li>
+					<li><a href="">Return Policy</a></li>
+					<li><a href="">Join Affiliate</a></li>
+				</ul>
+			</div>
+			<div class="footer-col-4">
+				<h3>Follow Us</h3>
+				<ul>
+					<li><a href="">Facebook</a></li>
+					<li><a href="">Instagram</a></li>
+					<li><a href="">Twitter</a></li>
+					<li><a href="">YouTube</a></li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<p class="copyright">Copyright 2020 or 2021 - jithinmathew</p>
+	</div>
+</div>
+<script>
+	var MenuItems = document.getElementById("MenuItems");
+
+	MenuItems.style.maxHeight = "0px";
+
+	function menutoggle(){
+		if(MenuItems.style.maxHeight == "0px")
+		{
+			MenuItems.style.maxHeight = "200px";
+		}
+		else{
+			MenuItems.style.maxHeight = "0px";
+		}
+	}
+</script>
+</body>
+</html>

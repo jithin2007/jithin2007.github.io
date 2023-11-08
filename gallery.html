@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gallery</title>
+	<link rel="stylesheet" href="style29.css">
+	<link rel="stylesheet" type="text/css" href="lightbox.min.css">
+	<script type="text/javascript" src="lightbox-plus-jquery.min.js"></script>
+</head>
+<body>
+	<div class="navbar">
+	<div class="logo">
+		<a href="index.html"><img src="logo4.png" width="125px"></a>
+	</div>
+	<nav>
+		<ul id="MenuItems">
+			<li><a href="index.html">Home</a></li>
+			<li>
+				<a href="login.php">Login</a>
+			</li>
+			<li>
+				<a href="logout.php">Logout</a>
+			</li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="flights.html">Book A Ticket</a></li>
+			<li><a href="contact.php">Contact Us</a></li>
+			<li><a href="aboutus.html">About Us</a></li>
+			<li><a href="learn.html">Learn</a></li>
+			<li><a href="creators.html">Creators</a></li>
+			<li><a href="feedback.html">Feedback</a></li>
+			<li><p><b>Page By Jithin Mathew</b></p></li>
+		</ul>
+	</nav>
+</div>
+	<div class="container">
+		<h1>VIDEOS</h1>
+		<div class="row">
+			<div class="col">
+				<div class="feature-img">
+					<img src="paris3.jpg" width="100%">
+					<img src="play.png" class="play-btn" onclick="playVideo('Untitled 5_360p.mp4')">
+				</div>
+			</div>
+			<div class="col">
+				<div class="small-img-row">
+					<div class="small-img">
+						<img src="simg.jpg">
+						<img src="play.png" class="play-btn" onclick="playVideo('Untitled 5_360p.mp4')">
+					</div>
+					<p>Eiffel Tower Drawings<br>And Info Video</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="video-player" id="videoPlayer">
+		<video width="100%" controls autoplay id="myVideo">
+			<source src="Untitled 5_360p.mp4" type="video/mp4">
+		</video>
+		<img src="close.png" class="close-btn" onclick="stopVideo()">
+	</div>
+	<font face = "times new roman" color=white>
+	<h1 align="center">PHOTOS</h1>
+	<div class="gallery">
+		<a href="imgs/IMG-20201224-WA0010.jpg" data-lightbox="mygallery"><img src="simgs/IMG-20201224-WA0010.jpg"></a>
+		<a href="imgs/IMG-20201228-WA0013.jpg" data-lightbox="mygallery"><img src="simgs/IMG-20201228-WA0013.jpg"></a>
+		<a href="imgs/paris10.jpg" data-lightbox="mygallery"><img src="simgs/paris10.jpg"></a>
+		<a href="imgs/paris11.jpg" data-lightbox="mygallery"><img src="simgs/paris11.jpg"></a>
+		<a href="imgs/paris12.jpg" data-lightbox="mygallery"><img src="simgs/paris12.jpg"></a>
+		<a href="imgs/paris13.jpg" data-lightbox="mygallery"><img src="simgs/paris13.jpg"></a>
+		<a href="imgs/paris15.jpg" data-lightbox="mygallery"><img src="simgs/paris15.jpg"></a>
+		<a href="imgs/paris2.jpg" data-lightbox="mygallery"><img src="simgs/paris2.jpg"></a>
+		<a href="imgs/paris3.jpg" data-lightbox="mygallery"><img src="simgs/paris3.jpg"></a>
+		<a href="imgs/paris4.jpg" data-lightbox="mygallery"><img src="simgs/paris4.jpg"></a>
+	</div>
+	<div class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer-col-1">
+				<h3>Download Our Mobile App</h3>
+				<p>Available for android as well as ios</p>
+				<div class="app-logo">
+					<img src="play-store.png">
+					<img src="app-store.png">
+				</div>
+			</div>
+			<div class="footer-col-2">
+				<img src="logo4.png">
+				<p>Eiffel Tower The Pride Of Paris, The Bride Of Happiness:)</p>
+			</div>
+			<div class="footer-col-3">
+				<h3>Useful Links</h3>
+				<ul>
+					<li><a href="">Coupons</a></li>
+					<li><a href="">Blog Post</a></li>
+					<li><a href="">Return Policy</a></li>
+					<li><a href="">Join Affiliate</a></li>
+				</ul>
+			</div>
+			<div class="footer-col-4">
+				<h3>Follow Us</h3>
+				<ul>
+					<li><a href="">Facebook</a></li>
+					<li><a href="">Instagram</a></li>
+					<li><a href="">Twitter</a></li>
+					<li><a href="">YouTube</a></li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<p class="copyright">Copyright 2020 or 2021 - jithinmathew</p>
+	</div>
+</div>
+<script>
+	var videoPlayer = document.getElementById("videoPlayer");
+	var myVideo = document.getElementById("myVideo");
+
+	function stopVideo(){
+		videoPlayer.style.display = "none";
+	}
+
+	function playVideo(file){
+		myVideo.src = file;
+		videoPlayer.style.display = "block";
+	}
+</script>
+<script>
+	var MenuItems = document.getElementById("MenuItems");
+
+	MenuItems.style.maxHeight = "0px";
+
+	function menutoggle(){
+		if(MenuItems.style.maxHeight == "0px")
+		{
+			MenuItems.style.maxHeight = "200px";
+		}
+		else{
+			MenuItems.style.maxHeight = "0px";
+		}
+	}
+</script>
+</body>
+</html>
